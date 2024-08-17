@@ -12,4 +12,4 @@ COPY . .
 
 RUN yarn build
 
-ENTRYPOINT ["node", "dist/bin/start.js", "start"]
+ENTRYPOINT ["node", "dist/bin/proxy.js", "start"]
