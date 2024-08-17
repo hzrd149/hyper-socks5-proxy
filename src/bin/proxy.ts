@@ -2,7 +2,7 @@
 import { Command } from "commander";
 
 import { createProxy } from "../proxy.js";
-import { decodeAddress, encodeAddress } from "../address.js";
+import { decodeAddress, encodeAddress } from "hyper-address";
 
 process.title = "proxy";
 

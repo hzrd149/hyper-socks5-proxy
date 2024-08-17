@@ -1,4 +1,4 @@
-import { decodeAddress, encodeAddress } from "./address.js";
+import { decodeAddress, encodeAddress, isAddress } from "hyper-address";
 import { createProxy } from "./proxy.js";
 
-export { createProxy, decodeAddress, encodeAddress };
+export { createProxy, decodeAddress, encodeAddress, isAddress };

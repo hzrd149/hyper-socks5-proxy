@@ -1,7 +1,7 @@
 {
   "name": "hyper-socks5-proxy",
   "description": "A SOCKS5 proxy that can forward connections to hyperdht nodes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -23,6 +23,7 @@
     "@scure/base": "^1.1.7",
     "commander": "^12.1.0",
     "debug": "^4.3.6",
+    "hyper-address": "^0.1.0",
     "hyperdht": "^6.16.2"
   },
   "devDependencies": {

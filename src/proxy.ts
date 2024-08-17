@@ -2,8 +2,7 @@ import { createServer } from "@pondwader/socks5-server";
 import HyperDHT from "hyperdht";
 import net from "net";
 import createDebug from "debug";
-
-import { decodeAddress, isAddress } from "./address.js";
+import { decodeAddress, isAddress } from "hyper-address";
 
 export type ProxyOptions = { node?: HyperDHT };
 export type HyperSocks5Proxy = ReturnType<typeof createServer> & {
@@ -25,7 +24,7 @@ export function createProxy(options?: ProxyOptions): HyperSocks5Proxy {
 
     // hyper addresses
     if (isAddress(connection.destAddress)) {
-      const pubkey = decodeAddress(connection.destAddress);
+      const pubkey = Buffer.from(decodeAddress(connection.destAddress));
       debug("Connecting to", pubkey.toString("hex"));
       const stream = proxy.node.connect(pubkey);
 
