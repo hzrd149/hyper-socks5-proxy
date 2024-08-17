@@ -1,7 +1,10 @@
 {
   "name": "hyper-socks5-proxy",
+  "description": "A SOCKS5 proxy that can forward connections to hyperdht nodes",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "author": "hzrd149",
   "license": "MIT",
   "files": [
@@ -9,7 +12,7 @@
   ],
   "bin": "dist/bin/proxy.js",
   "scripts": {
-    "prepublish": "tsc",
+    "prepack": "tsc",
     "start": "node dist/bin/proxy.js",
     "dev": "nodemon --loader @swc-node/register/esm src/bin/proxy.ts",
     "build": "tsc",

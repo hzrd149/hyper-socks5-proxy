@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 
-import { createProxy } from "../proxy";
-import { decodeAddress, encodeAddress } from "../address";
+import { createProxy } from "../proxy.js";
+import { decodeAddress, encodeAddress } from "../address.js";
 
 process.title = "proxy";
 

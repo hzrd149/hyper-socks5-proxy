@@ -3,7 +3,7 @@ import HyperDHT from "hyperdht";
 import net from "net";
 import createDebug from "debug";
 
-import { decodeAddress, isAddress } from "./address";
+import { decodeAddress, isAddress } from "./address.js";
 
 export type ProxyOptions = { node?: HyperDHT };
 export type HyperSocks5Proxy = ReturnType<typeof createServer> & {
