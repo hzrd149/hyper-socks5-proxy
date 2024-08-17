@@ -11,7 +11,7 @@ npx hyper-socks5-proxy start
 ## Running using docker
 
 ```bash
-docker run --rm -it -p 1080:1080 docker pull ghcr.io/hzrd149/hyper-socks5-proxy:master
+docker run --rm -it -p 1080:1080 ghcr.io/hzrd149/hyper-socks5-proxy:master
 ```
 
 ## Running from source

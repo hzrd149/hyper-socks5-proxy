@@ -11,6 +11,8 @@ RUN yarn install --frozen-lockfile
 
 COPY . .
 
+RUN yarn build
+
 FROM node:22-alpine AS main
 EXPOSE 1080
 
