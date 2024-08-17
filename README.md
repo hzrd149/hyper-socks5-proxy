@@ -1,6 +1,6 @@
 # Hyper SOCKS5 proxy
 
-`hyper-socks5-proxy` is a fairly simple SOCKS5 proxy server that can forward connections to [HyperDHT](https://docs.pears.com/building-blocks/hyperdht) nodes using [bech32 encoded pubkeys](./src/address.ts)
+`hyper-socks5-proxy` is a fairly simple SOCKS5 proxy server that can forward connections to [HyperDHT](https://docs.pears.com/building-blocks/hyperdht) nodes using [bech32 encoded connection strings](https://github.com/hzrd149/hyper-address)
 
 ## Running using npx
 
