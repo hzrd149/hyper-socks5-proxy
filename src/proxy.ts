@@ -109,7 +109,7 @@ export function createProxy(options?: ProxyOptions): HyperSocks5Proxy {
   };
 
   // intercept the close call and close the hyperdht node
-  const parentClose = proxy.close;
+  const parentClose = proxy.close.bind(proxy);
   proxy.close = (cb) => {
     return parentClose(() => {
       proxy.node

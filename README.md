@@ -19,8 +19,8 @@ docker run --rm -it -p 1080:1080 ghcr.io/hzrd149/hyper-socks5-proxy:master
 ```bash
 git clone https://github.com/hzrd149/hyper-socks5-proxy
 cd hyper-socks5-proxy
-yarn install # or npm install
-yarn build # npm build
+pnpm install # or npm install
+pnpm build # npm build
 node dist/bin/proxy.js start
 ```
 

@@ -1,7 +1,7 @@
 {
   "name": "hyper-socks5-proxy",
   "description": "A SOCKS5 proxy that can forward connections to hyperdht nodes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -39,5 +39,6 @@
   "nodemonConfig": {
     "exec": "node",
     "signal": "SIGTERM"
-  }
+  },
+  "packageManager": "pnpm@9.12.2"
 }
